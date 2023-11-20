@@ -1,17 +1,13 @@
-// printing miltiple characters in file
+// printing characters aka string in other file which is known as testfile.txt
 #include <stdio.h>
 int main (){
-    FILE *fptr;
-    fptr=fopen("test.txt","r");
-    char ch;
-    ch=fgetc(fptr);
-    while (ch!=EOF)
-    {
-        printf("%c",ch);
-        ch=fgetc(fptr);
-      
-    }
-    printf("\n");
-    fclose(fptr);
+    FILE  *file;
+    char a[30];
+
+    file=fopen("testfile.txt","w");
+    fprintf(file,"how are you my son, its aurthor morgan",a);
+    fclose(file);
+
     return 0;
+
 }
