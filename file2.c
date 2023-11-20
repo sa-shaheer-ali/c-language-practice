@@ -1,15 +1,13 @@
-// writing file with the help of fputc
+// printing integer from the file;
+
 #include <stdio.h>
 int main (){
-    FILE *fptr;
-    fptr=fopen("file.txt","w");
-    fputc('h',fptr);
-    fputc('e',fptr);
-    fputc('l',fptr);
-    fputc('l',fptr);
-    fputc('o',fptr);
-    
-    fclose(fptr);
-    return 0;
+    FILE*fptr;
+    int a;
+
+    fptr=fopen("1st.txt","r");
+    fscanf(fptr,"%d",&a);
+    printf("%d",a);
+
 
 }
