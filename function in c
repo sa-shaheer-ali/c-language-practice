@@ -1,0 +1,18 @@
+#include <stdio.h>
+void function(int num,int sum);
+int main (){
+    int num,sum;
+    
+    function(num,sum);
+    return 0;
+    
+    
+}
+void function (int num,int sum)
+{num =12345;
+sum=6789;
+printf("%d",num);
+printf("%d",sum);
+
+
+}
