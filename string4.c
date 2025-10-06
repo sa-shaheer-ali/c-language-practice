@@ -13,8 +13,9 @@ void string(char arr[]){
     {printf("%c",arr[i]);
         /* code */
     }
-    printf("\n");
+    printf("\n");;
 }
 // printing multiply character in the string
+
 
 
